@@ -1,0 +1,21 @@
+{
+  "name": "dark-web-monitor",
+  "version": "1.0.0",
+  "description": "Monitors dark web forums and marketplaces for leaked credentials",
+  "main": "src/index.js",
+  "bin": {
+    "darkweb-monitor": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": ["security", "monitoring", "credentials", "dark-web"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "commander": "^11.1.0"
+  }
+}
