@@ -1,44 +1,84 @@
-# Dark Web Monitor
+# dark-web-monitor
 
-A CLI tool that monitors dark web sources for leaked credentials from your domains.
+## Detailed Description
 
-## Installation
+dark-web-monitor is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
+
+## Problem Statement
+
+Describe the user or business problem this project solves, the target users, and expected outcomes.
+
+## Solution Overview
+
+Summarize the architecture, core modules, and runtime behavior at a high level.
+
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
 
 ```bash
-cd dark-web-monitor
-npm install
+npm ci
+npm run lint
+npm test
+npm run build
 ```
 
 ## Usage
 
-```bash
-# Single scan
-node src/index.js -d example.com -o
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-# Continuous monitoring
-node src/index.js -d example.com,yourcompany.com
-```
+## Quality Standards
 
-## Options
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-| Option | Short | Description |
-|--------|-------|-------------|
-| `--domains` | `-d` | Comma-separated list of domains |
-| `--once` | `-o` | Run once and exit |
-| `--interval` | `-i` | Check interval in minutes |
-| `--verbose` | `-v` | Verbose output |
+## Security
 
-## Features
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
-- Monitors breach databases
-- Checks leak sites
-- Tracks dark web directories
-- Detects multiple credential types
+## Contributing
 
-## Legal Notice
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
 
-This tool is for authorized security monitoring only. Ensure you have proper authorization before monitoring any domains or systems.
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT
+This project is released under the MIT License.
